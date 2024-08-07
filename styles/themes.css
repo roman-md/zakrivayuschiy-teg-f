@@ -1,6 +1,28 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+  --font-family-wgth: 400;
+  --theme-main-color: #000;
+  --theme-background-color: #fff;
+  --theme-background-gradient-line-color: #d3d3d3;
+  --theme-background-gradient-start-color: #e7e7e7;
+  --theme-background-gradient-end-color: #1a1a1a;
+}
+
+:root.theme-dark {
+  --font-family-wgth: 465;
+  --theme-main-color: #00cc14;
+  --theme-background-color: #000;
+  --theme-background-gradient-line-color: #000;
+  --theme-background-gradient-start-color: #007f0c;
+  --theme-background-gradient-end-color: #004306;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-dark {
+    --font-family-wgth: 465;
+    --theme-main-color: #00cc14;
+    --theme-background-color: #000;
+    --theme-background-gradient-line-color: #000;
+    --theme-background-gradient-start-color: #007f0c;
+    --theme-background-gradient-end-color: #004306;
+  }
+}
