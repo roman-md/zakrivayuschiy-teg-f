@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
@@ -44,7 +47,40 @@
       </nav>
     </header>
     <main class="main container">
+      <section class="cards-list">
+        <article class="card">
+          <h2 class="card__title">
+            Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <figure class="card__image">
+            <picture class="card__image-picture">
+              <source srcset="./images/cards/card_1.avif" type="image/avif">
+              <source srcset="./images/cards/card_1.webp" type="image/webp">
+              <img src="./images/cards/card_1.png" loading="lazy" alt="Начало работы">
+            </picture>
+            <span class="card__image-tag">&lt;/HTML&gt;</span>
+          </figure>
+          <div class="card__description">
+            <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+            <p>Место для ваших воспоминаний о начале обучения.</p>
+          </div>
+          <div class="card__buttons">
+            <button class="card__icon-button button">
+              <img class="card__icon-button-img" src="./svg/heart-test.svg" alt="сердце">
+            </button>
+            <button class="card__like-button button">
+              <span class="button__text">Like</span>
+            </button>
+          </div>
 
+        </article>
+      </section>
+      <button class="save-button button">
+        <svg viewBox="0 0 21 21" class="save-button__image">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

@@ -1,5 +1,6 @@
 :root.theme-light {
   --font-family-wgth: 400;
+  --font-family-wgth-bold: 700;
   --theme-main-color: #000;
   --theme-background-color: #fff;
   --theme-background-gradient-line-color: #d3d3d3;
@@ -9,6 +10,7 @@
 
 :root.theme-dark {
   --font-family-wgth: 465;
+  --font-family-wgth-bold: 785;
   --theme-main-color: #00cc14;
   --theme-background-color: #000;
   --theme-background-gradient-line-color: #000;
@@ -19,6 +21,7 @@
 @media (prefers-color-scheme: dark) {
   :root.theme-dark {
     --font-family-wgth: 465;
+    --font-family-wgth-bold: 785;
     --theme-main-color: #00cc14;
     --theme-background-color: #000;
     --theme-background-gradient-line-color: #000;

@@ -1,6 +1,7 @@
 :root {
   --font-family: 'Inter-Variable';
   --font-family-wgth: 400;
+  --font-family-wgth-bold: 700;
   --accent-font-family: 'Press Start 2P';
   --theme-main-color: #000;
   --theme-background-color: #fff;
