@@ -1,7 +1,9 @@
 :root.theme-light {
   --font-family-wgth: 400;
   --font-family-wgth-bold: 700;
+  --heart-contur-color: #000;
   --theme-main-color: #000;
+  --theme-button-color: #fff;
   --theme-background-color: #fff;
   --theme-background-gradient-line-color: #d3d3d3;
   --theme-background-gradient-start-color: #e7e7e7;
@@ -11,7 +13,9 @@
 :root.theme-dark {
   --font-family-wgth: 465;
   --font-family-wgth-bold: 785;
+  --heart-contur-color: #00cc14;
   --theme-main-color: #00cc14;
+  --theme-button-color: #00cc14;
   --theme-background-color: #000;
   --theme-background-gradient-line-color: #000;
   --theme-background-gradient-start-color: #007f0c;
@@ -22,7 +26,9 @@
   :root.theme-dark {
     --font-family-wgth: 465;
     --font-family-wgth-bold: 785;
+    --heart-contur-color: #00cc14;
     --theme-main-color: #00cc14;
+    --theme-button-color: #00cc14;
     --theme-background-color: #000;
     --theme-background-gradient-line-color: #000;
     --theme-background-gradient-start-color: #007f0c;
