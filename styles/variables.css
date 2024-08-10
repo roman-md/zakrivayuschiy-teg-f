@@ -10,11 +10,11 @@
   --heart-color-hover: #000;
   --heart-color-active: #ff0000;
   --heart-color-click: #ff0000;
-
   --theme-main-color: #000;
   --theme-button-color: #fff;
   --theme-background-color: #fff;
   --theme-background-gradient-line-color: #d3d3d3;
   --theme-background-gradient-start-color: #e7e7e7;
   --theme-background-gradient-end-color: #1a1a1a;
+  --backdrop-background-color: #000;
 }

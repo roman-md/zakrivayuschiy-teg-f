@@ -44,8 +44,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 0 25px;
-  margin: clamp(6.25rem, 6.1058rem + 0.6154vw, 6.375rem) auto;
+  padding: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem) 0 23px;
+  margin: 100px auto;
   background-color: var(--theme-background-color, #fff);
   inline-size: 100%;
 }
@@ -71,12 +71,22 @@
   margin-block-start: 25px;
 }
 
+.theme-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-inline-start: 18px;
+}
+
+.theme-menu__item {
+  line-height: 14px;
+}
+
 .theme-menu__button {
   text-transform: uppercase;
   font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 14px;
   background-color: transparent;
   border: none;
   position: relative;
@@ -152,10 +162,11 @@
   font-weight: var(--font-family-wgth-bold, 700);
   font-variation-settings: 'wght' var(--font-family-wgth-bold, 700);
   line-height: 21.78px;
+  min-block-size: 31px;
   padding:
-    clamp(0.21875rem, 0.2548rem + -0.1538vw, 0.1875rem)
+    clamp(0.1875rem, 0.3221rem + -0.3077vw, 0.25rem)
     clamp(0.625rem, -0.3846rem + 4.3077vw, 1.5rem)
-    clamp(0.34375rem, 0.524rem + -0.7692vw, 0.1875rem)
+    clamp(0.1875rem, 0.5913rem + -0.9231vw, 0.375rem)
     10px
   ;
 }
@@ -163,15 +174,18 @@
 .card__image {
   position: relative;
   margin: 0;
+  display: block;
+  min-block-size: clamp(23.4375rem, 0rem + 100vw, 43.75rem);
+  max-block-size: clamp(23.4375rem, 0rem + 100vw, 43.75rem);
+  border-block-start: 2px solid var(--theme-main-color, #000);
+  border-block-end: 2px solid var(--theme-main-color, #000);
 }
 
 .card__image-picture img {
   inline-size: 100%;
-  min-block-size: clamp(23.1875rem, -0.25rem + 100vw, 43.5rem);
+  block-size: inherit;
   object-position: center;
   object-fit: cover;
-  border-block-start: 2px solid var(--theme-main-color, #000);
-  border-block-end: 2px solid var(--theme-main-color, #000);
 }
 
 .card__image-tag {
@@ -206,6 +220,12 @@
   gap: 27px;
 }
 
+.card__description p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
 .card__buttons {
   display: flex;
   flex-direction: row;
@@ -220,7 +240,7 @@
   font-family: var(--accent-font-family), sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 12.6px;
+  line-height: 13px;
   border: 2px solid var(--theme-main-color, #000);
   background-color: var(--theme-background-color, #fff);
   transition: box-shadow 0.3s ease;
@@ -389,7 +409,7 @@
   flex-direction: column;
   background-color: var(--theme-background-color, #fff);
   border: 2px solid  var(--theme-main-color, #000);
-  padding: 30px clamp(2.5rem, 3.2212rem + -3.0769vw, 1.875rem);
+  padding: 30px clamp(1.875rem, 3.2212rem + -3.0769vw, 2.5rem);
   inline-size: clamp(21.3125rem, 20.4471rem + 3.6923vw, 22.0625rem);
   max-inline-size: clamp(21.3125rem, 20.4471rem + 3.6923vw, 22.0625rem);
   gap: 30px;
@@ -401,13 +421,14 @@ dialog:not([open]) {
 }
 
 .save-dialog::backdrop {
-  background-color: var(--theme-main-color, #000);
+  background-color: var(--backdrop-background-color, #000);
   opacity: 0.75;
 }
 
 .save-dialog__text-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 39px 1fr;
+  align-items: center;
   gap: 20px;
 }
 
