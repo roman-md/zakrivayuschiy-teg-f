@@ -3,14 +3,13 @@
   --font-family-wgth: 400;
   --font-family-wgth-bold: 700;
   --accent-font-family: 'Press Start 2P';
-
   --heart-contur-color: #000;
   --heart-main-body-color: transparent;
   --heart-core-color: transparent;
   --heart-sparks-color: #ff0000;
-
   --heart-color-hover: #000;
   --heart-color-active: #ff0000;
+  --heart-color-click: #ff0000;
 
   --theme-main-color: #000;
   --theme-button-color: #fff;
