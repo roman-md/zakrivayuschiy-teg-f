@@ -23,7 +23,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root.theme-dark {
+  :root {
     --font-family-wgth: 465;
     --font-family-wgth-bold: 785;
     --heart-contur-color: #00cc14;
